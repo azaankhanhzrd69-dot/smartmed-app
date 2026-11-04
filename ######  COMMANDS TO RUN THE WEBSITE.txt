@@ -1,0 +1,19 @@
+######  COMMANDS TO RUN THE WEBSITE ##
+backend : .\.venv\Scripts\Activate.ps1
+python -m uvicorn app.main:app --app-dir backend --reload --host 127.0.0.1 --port 8000   
+
+
+
+FRONTEND WEBSITE :  Set-Location .\doctor-portal
+npm run dev
+
+
+
+
+FRONTEND APP : Set-Location .\patient-app
+flutter pub get
+Copy-Item .\.env.example .\.env.local.json
+
+
+#####
+#####
